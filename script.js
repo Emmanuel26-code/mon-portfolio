@@ -121,6 +121,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	const projectData = {
 		billingue: {
 			title: "Billingue : Apprentissage du Baoulé",
+			repository: "https://github.com/kobenanadingraj-code/Projet-de-langue",
 			type: "Application Mobile · Préservation culturelle & IA vocale",
 			lead: "Application mobile conçue pour démocratiser l'apprentissage de la langue baoulé grâce à une approche interactive et l'assistance de modèles d'intelligence artificielle vocale.",
 			problem: "La transmission des langues locales ivoiriennes comme le Baoulé fait face au manque d'outils numériques modernes et accessibles pour la nouvelle génération.",
@@ -149,6 +150,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		},
 		"cahier-texte": {
 			title: "Cahier de texte numérique",
+			repository: "https://github.com/Emmanuel26-code/cahier-texte-numerique",
 			type: "Application web scolaire",
 			lead: "Application web de gestion du cahier de texte d’un établissement scolaire. Elle centralise les séances, les documents de cours et le suivi de l’avancement pédagogique.",
 			problem: "Les enseignants ont besoin d’un espace commun pour consigner les cours réalisés, communiquer le travail à faire et organiser les supports pédagogiques par classe et matière.",
@@ -184,34 +186,25 @@ document.addEventListener("DOMContentLoaded", () => {
 		if (!data || !projectModal || !modalContent) return;
 
 		modalContent.innerHTML = `
-			<h3>${data.title}</h3>
+			<h3 id="modal-title">${data.title}</h3>
 			<p class="modal-tagline">${data.type}</p>
 			<p class="modal-tagline">Projet d’équipe réalisé à l’ESATIC.</p>
-			
-			<p>${data.lead}</p>
-			
+			<p class="modal-lead">${data.lead}</p>
+
 			<h4 class="modal-section-title">Le défi adressé</h4>
 			<p>${data.problem}</p>
-			
+
 			<h4 class="modal-section-title">La solution développée</h4>
 			<p>${data.solution}</p>
-			
+
 			<h4 class="modal-section-title">Fonctionnalités &amp; Architecture</h4>
-			<ul>
-				${data.features.map(f => `<li>${f}</li>`).join("")}
-			</ul>
-			
-			${data.tech.length ? `
-				<h4 class="modal-section-title">Technologies mobilisées</h4>
-				<ul class="tag-list" style="margin-bottom: 24px;">
-					${data.tech.map(t => `<li class="tag-strong">${t}</li>`).join("")}
-				</ul>
-			` : ""}
+			<ul class="modal-feature-list">${data.features.map(f => `<li>${f}</li>`).join("")}</ul>
+
+			<h4 class="modal-section-title">Technologies mobilisées</h4>
+			<ul class="tag-list modal-tech-list">${data.tech.map(t => `<li class="tag-strong">${t}</li>`).join("")}</ul>
 
 			<div class="modal-actions">
-				<button class="button button-secondary button-sm" type="button" data-modal-close>
-					Fermer
-				</button>
+				<button class="button button-secondary button-sm" type="button" data-modal-close>Fermer</button>
 			</div>
 		`;
 
@@ -251,8 +244,15 @@ document.addEventListener("DOMContentLoaded", () => {
 			}
 		});
 
-		projectModal.addEventListener("cancel", () => {
-			document.body.style.overflow = "";
+		document.addEventListener("keydown", (e) => {
+			if (e.key === "Escape" && projectModal.open) {
+				closeModal();
+			}
+		});
+
+		projectModal.addEventListener("cancel", (e) => {
+			e.preventDefault();
+			closeModal();
 		});
 	}
 

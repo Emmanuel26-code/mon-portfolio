@@ -1068,7 +1068,7 @@ h3 span {
 .certificate-preview {
 	display: block;
 	width: 100%;
-	height: 240px;
+	height: 320px;
 	border: 1px solid var(--line);
 	background: #fff;
 }
@@ -1423,10 +1423,10 @@ h3 span {
 	width: 100%;
 	height: 100%;
 	border: none;
-	padding: 20px;
-	background: rgba(231, 237, 242, 0.85);
-	backdrop-filter: blur(14px);
-	-webkit-backdrop-filter: blur(14px);
+	padding: clamp(12px, 3vw, 24px);
+	background: rgba(17, 17, 17, 0.58);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
 	display: grid;
 	place-items: center;
 	z-index: 1000;
@@ -1442,82 +1442,143 @@ h3 span {
 
 .modal-card {
 	position: relative;
-	width: min(700px, 94vw);
-	max-height: 86vh;
+	width: min(700px, 100%);
+	max-height: min(86vh, 760px);
 	overflow-y: auto;
-	background: #ffffff;
-	border: 1px solid rgba(199, 167, 66, 0.4);
+	overscroll-behavior: contain;
+	scroll-behavior: smooth;
+	scrollbar-color: #b7b4ad transparent;
+	background: #f8f7f4;
+	border: 1px solid #d2d0ca;
 	border-radius: var(--radius-lg);
-	padding: 28px;
-	box-shadow: var(--shadow-lg);
+	padding: clamp(22px, 4vw, 36px);
+	box-shadow: 0 24px 70px rgba(0, 0, 0, 0.24);
+	animation: modalEnter 220ms ease-out both;
+}
+
+@keyframes modalEnter {
+	from { opacity: 0; transform: translateY(10px); }
+	to { opacity: 1; transform: translateY(0); }
+}
+
+.modal-content {
+	min-width: 0;
+	padding-top: 20px;
+}
+
+.modal-content > h3 {
+	max-width: calc(100% - 34px);
+	margin-bottom: 8px;
+	font-size: clamp(1.35rem, 3vw, 1.7rem);
+}
+
+.modal-tagline {
+	margin-bottom: 14px;
+	color: var(--accent);
+	font-family: var(--font-mono);
+	font-size: 0.8rem;
+	line-height: 1.55;
+}
+
+.modal-lead {
+	max-width: 760px;
+	margin: 16px 0 20px;
+	color: #292824;
+	font-size: 0.95rem;
+	line-height: 1.8;
+}
+
+.modal-content > p:not(.modal-tagline) {
+	margin-bottom: 12px;
+	color: var(--text-secondary);
+	font-size: 0.88rem;
+	line-height: 1.75;
+}
+
+.modal-section-title {
+	margin: 22px 0 7px;
+	color: #4b5965;
+	font-family: var(--font-mono);
+	font-size: 0.85rem;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+}
+
+.modal-feature-list {
+	padding-left: 20px;
+	margin-bottom: 22px;
+	color: var(--text-secondary);
+	font-size: 0.84rem;
+	line-height: 1.75;
+}
+
+.modal-feature-list li + li {
+	margin-top: 5px;
+}
+
+.modal-tech-list {
+	margin-bottom: 24px;
 }
 
 .modal-close {
-	position: absolute;
-	top: 16px;
-	right: 16px;
-	width: 34px;
-	height: 34px;
+	position: sticky;
+	top: 8px;
+	z-index: 2;
+	width: 38px;
+	height: 38px;
+	margin: 0 0 -38px auto;
 	border: 1px solid var(--line);
-	border-radius: 50%;
-	background: #f2f5f7;
+	border-radius: 2px;
+	background: rgba(248, 247, 244, 0.94);
 	color: var(--text);
 	font-size: 1.4rem;
 	line-height: 1;
 	cursor: pointer;
 	display: grid;
 	place-items: center;
-	transition: background var(--transition-fast), color var(--transition-fast);
+	transition: background-color var(--transition-fast), color var(--transition-fast), transform var(--transition-fast);
 }
 
 .modal-close:hover {
-	background: var(--accent);
-	color: #111111;
+	background: #171717;
+	color: #fff;
+	transform: rotate(90deg);
 }
 
-.modal-content h3 {
-	font-size: 1.6rem;
-	margin-bottom: 5px;
+@media (max-width: 700px) {
+	.project-modal {
+		padding: 10px;
+	}
+
+	.modal-card {
+		max-height: 90vh;
+		padding: 22px;
+	}
 }
 
-.modal-tagline {
-	color: var(--accent);
-	font-family: var(--font-mono);
-	font-size: 0.8rem;
-	margin-bottom: 18px;
+@media (max-width: 420px) {
+	.project-modal {
+		padding: 6px;
+	}
+
+	.modal-card {
+		max-height: 94vh;
+		padding: 18px;
+	}
+
+	.modal-actions {
+		justify-content: stretch;
+	}
+
+	.modal-actions .button {
+		width: 100%;
+	}
 }
 
-.modal-section-title {
-	font-size: 0.85rem;
-	color: #4b5965;
-	font-family: var(--font-mono);
-	margin-top: 18px;
-	margin-bottom: 6px;
-	text-transform: uppercase;
-	letter-spacing: 0.5px;
-}
-
-.modal-content p {
-	color: var(--text-secondary);
-	font-size: 0.88rem;
-	line-height: 1.75;
-	margin-bottom: 12px;
-}
-
-.modal-content ul {
-	padding-left: 18px;
-	color: var(--text-secondary);
-	font-size: 0.82rem;
-	line-height: 1.7;
-	margin-bottom: 18px;
-}
-
-.modal-actions {
-	display: flex;
-	gap: 12px;
-	margin-top: 22px;
-	padding-top: 18px;
-	border-top: 1px solid var(--line);
+@media (prefers-reduced-motion: reduce) {
+	.modal-card {
+		animation: none;
+	}
 }
 
 /* Toast */
@@ -1626,7 +1687,7 @@ h3 span {
 		grid-column: span 2;
 	}
 	.projects-grid {
-		grid-template-columns: 1fr;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
 		gap: 26px;
 	}
 	.project-img {
@@ -1649,6 +1710,8 @@ h3 span {
 	}
 	.menu-toggle {
 		display: flex;
+		width: 44px;
+		height: 44px;
 	}
 	.site-nav {
 		position: absolute;
@@ -1682,6 +1745,9 @@ h3 span {
 		grid-template-columns: 1fr;
 		padding-block: 40px 60px;
 		gap: 35px;
+	}
+	.projects-grid {
+		grid-template-columns: 1fr;
 	}
 	.hero-copy {
 		max-width: 100%;
@@ -1722,7 +1788,7 @@ h3 span {
 		flex-direction: column;
 		align-items: stretch;
 	}
-	.button {
+	.hero-actions .button {
 		width: 100%;
 		justify-content: center;
 	}
@@ -1762,6 +1828,80 @@ h3 span {
 	.footer-copy > span {
 		grid-column: 1;
 		justify-self: center;
+	}
+}
+
+@media (max-width: 820px) {
+	.content-section {
+		padding-block: clamp(44px, 8vw, 68px);
+	}
+
+	.section-heading {
+		margin-bottom: 30px;
+	}
+
+	.skills-grid,
+	.cert-grid {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.project-actions,
+	.modal-actions {
+		flex-wrap: wrap;
+	}
+
+	.project-actions .button,
+	.modal-actions .button {
+		flex: 1 1 140px;
+	}
+
+	.contact-value {
+		min-width: 0;
+		overflow-wrap: anywhere;
+	}
+
+	.site-nav {
+		max-height: calc(100vh - 68px);
+		overflow-y: auto;
+		overscroll-behavior: contain;
+	}
+
+}
+
+@media (max-width: 540px) {
+	.skills-grid,
+	.cert-grid {
+		grid-template-columns: minmax(0, 1fr);
+	}
+
+	.section-wrap {
+		width: min(92%, 430px);
+	}
+
+	.about-layout {
+		gap: 22px;
+	}
+
+	.skill-card,
+	.contact-form {
+		padding: 20px;
+	}
+
+	.project-body {
+		padding: 18px;
+	}
+
+	.project-actions .button,
+	.modal-actions .button {
+		width: 100%;
+		flex-basis: 100%;
+	}
+
+	.toast {
+		right: 4%;
+		bottom: 16px;
+		left: 4%;
+		text-align: center;
 	}
 }
 
