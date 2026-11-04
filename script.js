@@ -317,8 +317,16 @@ document.addEventListener("DOMContentLoaded", () => {
 			try {
 				const response = await fetch(contactForm.action, {
 					method: "POST",
-					body: new FormData(contactForm),
-					headers: { Accept: "application/json" }
+					body: JSON.stringify({
+						name: nameInput.value.trim(),
+						email: emailInput.value.trim(),
+						subject: subjectInput.value.trim(),
+						message: messageInput.value.trim()
+					}),
+					headers: {
+						Accept: "application/json",
+						"Content-Type": "application/json"
+					}
 				});
 				let result;
 				try {
