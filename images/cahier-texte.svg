@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="100%" height="100%">
+  <rect width="800" height="480" fill="#f4f7f6"/>
+  <rect width="800" height="62" fill="#0f5c4d"/>
+  <rect x="28" y="15" width="32" height="32" rx="8" fill="#e8871e"/>
+  <path d="M36 23h7a6 6 0 0 1 6 6v11a6 6 0 0 0-6-4h-7zM52 23h-3a6 6 0 0 0-6 6v11a6 6 0 0 1 6-4h3z" fill="none" stroke="#fff" stroke-width="1.7" stroke-linejoin="round"/>
+  <text x="70" y="37" fill="#fff" font-family="Arial, sans-serif" font-size="16" font-weight="700">Cahier de texte</text>
+  <text x="512" y="36" fill="#e4efeb" font-family="Arial, sans-serif" font-size="12">Accueil</text>
+  <text x="574" y="36" fill="#e4efeb" font-family="Arial, sans-serif" font-size="12">Séances</text>
+  <text x="646" y="36" fill="#e4efeb" font-family="Arial, sans-serif" font-size="12">Documents</text>
+  <circle cx="765" cy="31" r="15" fill="#ffffff" opacity=".18"/>
+  <text x="765" y="35" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="10" font-weight="700">EK</text>
+
+  <text x="38" y="103" fill="#1d2b27" font-family="Arial, sans-serif" font-size="23" font-weight="700">Bonjour, enseignant</text>
+  <text x="38" y="126" fill="#68786f" font-family="Arial, sans-serif" font-size="12">Retrouvez vos séances et vos supports de cours.</text>
+
+  <g transform="translate(38 151)">
+    <rect width="226" height="84" rx="12" fill="#fff" stroke="#dbe4e0"/>
+    <circle cx="38" cy="42" r="21" fill="#e3f1ed"/>
+    <path d="M30 42h16M38 34v16" stroke="#0f5c4d" stroke-width="2" stroke-linecap="round"/>
+    <text x="72" y="38" fill="#68786f" font-family="Arial, sans-serif" font-size="11">Espace enseignant</text>
+    <text x="72" y="57" fill="#1d2b27" font-family="Arial, sans-serif" font-size="14" font-weight="700">Nouvelle séance</text>
+  </g>
+  <g transform="translate(278 151)">
+    <rect width="226" height="84" rx="12" fill="#fff" stroke="#dbe4e0"/>
+    <circle cx="38" cy="42" r="21" fill="#e3f1ed"/>
+    <path d="M31 33h14l5 5v15H31zM45 33v6h5M35 44h10M35 48h10" fill="none" stroke="#0f5c4d" stroke-width="1.7" stroke-linejoin="round"/>
+    <text x="72" y="38" fill="#68786f" font-family="Arial, sans-serif" font-size="11">Supports pédagogiques</text>
+    <text x="72" y="57" fill="#1d2b27" font-family="Arial, sans-serif" font-size="14" font-weight="700">Importer un cours</text>
+  </g>
+  <g transform="translate(518 151)">
+    <rect width="244" height="84" rx="12" fill="#fff" stroke="#dbe4e0"/>
+    <circle cx="38" cy="42" r="21" fill="#fff0df"/>
+    <path d="M30 49V37h5v12M38 49V31h5v18M46 49V40h5v9" fill="none" stroke="#e8871e" stroke-width="2" stroke-linejoin="round"/>
+    <text x="72" y="38" fill="#68786f" font-family="Arial, sans-serif" font-size="11">Suivi pédagogique</text>
+    <text x="72" y="57" fill="#1d2b27" font-family="Arial, sans-serif" font-size="14" font-weight="700">Séances enregistrées</text>
+  </g>
+
+  <g transform="translate(38 258)">
+    <rect width="724" height="184" rx="12" fill="#fff" stroke="#dbe4e0"/>
+    <text x="20" y="31" fill="#1d2b27" font-family="Arial, sans-serif" font-size="15" font-weight="700">Générer le plan d’un cours</text>
+    <text x="20" y="51" fill="#68786f" font-family="Arial, sans-serif" font-size="11">Importez un document et obtenez une proposition structurée par l’IA.</text>
+    <rect x="20" y="69" width="326" height="89" rx="9" fill="#f4f7f6" stroke="#dbe4e0" stroke-dasharray="5 4"/>
+    <circle cx="52" cy="103" r="15" fill="#e3f1ed"/>
+    <path d="M47 103h10M52 98v10" stroke="#0f5c4d" stroke-width="1.8" stroke-linecap="round"/>
+    <text x="77" y="101" fill="#1d2b27" font-family="Arial, sans-serif" font-size="12" font-weight="700">Support de cours</text>
+    <text x="77" y="120" fill="#68786f" font-family="Arial, sans-serif" font-size="10">DOCX · PDF · TXT · PPTX · XLSX</text>
+    <rect x="77" y="132" width="102" height="18" rx="5" fill="#0f5c4d"/>
+    <text x="128" y="145" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="9" font-weight="700">CHOISIR UN FICHIER</text>
+    <path d="M371 114h34" stroke="#dbe4e0" stroke-width="2"/>
+    <path d="m399 108 7 6-7 6" fill="none" stroke="#0f5c4d" stroke-width="2"/>
+    <rect x="426" y="69" width="278" height="89" rx="9" fill="#f4f7f6" stroke="#dbe4e0"/>
+    <rect x="444" y="82" width="93" height="19" rx="9" fill="#e3f1ed"/>
+    <circle cx="455" cy="91.5" r="3" fill="#0f5c4d"/>
+    <text x="464" y="95" fill="#0f5c4d" font-family="Arial, sans-serif" font-size="9" font-weight="700">PROPOSITION IA</text>
+    <text x="444" y="119" fill="#1d2b27" font-family="Arial, sans-serif" font-size="11" font-weight="700">1. Partie · Introduction</text>
+    <text x="458" y="136" fill="#68786f" font-family="Arial, sans-serif" font-size="10">1.1 Chapitre · Notions fondamentales</text>
+    <text x="458" y="150" fill="#68786f" font-family="Arial, sans-serif" font-size="10">1.2 Titres et sous-titres à relire</text>
+  </g>
+</svg>

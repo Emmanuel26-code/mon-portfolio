@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#e8e6e1">
+	<meta name="description" content="Portfolio de Kobri Emmanuel Kablan, étudiant en Licence 3 SIGL à l'ESATIC. Développement mobile, Big Data et Intelligence Artificielle. En recherche d'un stage de fin d'études dès mars 2027.">
+	<meta name="author" content="Kobri Emmanuel Kablan">
+	<title>Kobri Emmanuel Kablan | Portfolio | Étudiant ESATIC &amp; Développeur Logiciel / IA</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js" defer></script>
+</head>
+<body>
+	<div class="reading-progress" id="reading-progress" aria-hidden="true"></div>
+	<a class="skip-link" href="#contenu">Aller directement au contenu</a>
+
+	<header class="site-header" id="site-header">
+		<a class="wordmark" href="index.html#accueil" aria-label="Kobri Emmanuel Kablan, retour à l'accueil">
+			<span class="wordmark-name">EMMANUEL<br><span>PORTFOLIO</span></span>
+		</a>
+
+		<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Ouvrir le menu de navigation">
+			<span></span><span></span><span></span>
+		</button>
+
+		<nav class="site-nav" id="site-nav" aria-label="Navigation principale">
+			<a class="nav-link active" href="index.html#accueil" aria-current="page">Accueil</a>
+			<a class="nav-link" href="a-propos.html#apropos">À propos</a>
+			<a class="nav-link" href="projets.html#projets">Projets</a>
+			<a class="nav-contact" href="contact.html#contact">Me contacter <span aria-hidden="true">↗</span></a>
+		</nav>
+	</header>
+
+	<main id="contenu">
+		<section class="hero section-wrap" id="accueil" aria-labelledby="hero-title">
+			<div class="hero-copy">
+				<h1 id="hero-title">Kobri Emmanuel Kablan</h1>
+				<p class="hero-role">Étudiant en Systèmes Informatiques et Génie Logiciel</p>
+				<p class="hero-intro">Étudiant en Licence 3 à l'<strong>ESATIC</strong>, je m'intéresse au développement logiciel & mobile et à l'Intelligence Artificielle.</p>
+
+				<div class="stage-callout">
+					<div class="callout-text">
+						<strong>À la recherche d'un stage de fin d'études</strong>
+						<p>À partir de mars 2027, pour une durée minimale de 3 mois en Génie Logiciel, Mobile ou IA.</p>
+					</div>
+				</div>
+
+				<div class="hero-actions">
+					<a class="button button-primary" href="projets.html#projets">Découvrir mes projets <span aria-hidden="true">↗</span></a>
+					<a class="button button-secondary" href="contact.html#contact">Me contacter</a>
+				</div>
+			</div>
+
+			<aside class="profile-panel" aria-label="Photo de Kobri Emmanuel Kablan">
+				<div class="profile-media-box">
+					<img class="profile-img" src="images/profil_blanc.jpeg" alt="Portrait de Kobri Emmanuel Kablan" width="1078" height="926" fetchpriority="high">
+				</div>
+			</aside>
+		</section>
+	</main>
+
+	<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+	<footer class="site-footer">
+		<div class="footer-content section-wrap">
+			<div class="footer-brand">
+				<div><strong>Kobri Emmanuel Kablan</strong><p>Étudiant en Licence 3 SIGL · ESATIC Abidjan</p></div>
+			</div>
+			<div class="footer-copy">
+				<span>© <span id="year">2026</span> Kobri Emmanuel Kablan. Tous droits réservés.</span>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

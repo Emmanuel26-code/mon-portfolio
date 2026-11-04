@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="100%" height="100%">
+  <rect width="800" height="480" fill="#0a191d"/>
+  <rect width="800" height="62" fill="#0d2427"/>
+  <circle cx="45" cy="31" r="17" fill="#7894ad"/>
+  <path d="M37 38c0-11 7-17 17-17-1 10-7 17-17 17zm0 0c-1-6-4-9-9-10" fill="none" stroke="#f8fafc" stroke-width="1.8" stroke-linejoin="round"/>
+  <text x="71" y="37" fill="#f8fafc" font-family="Arial, sans-serif" font-size="16" font-weight="700">EcoChallenge</text>
+  <text x="500" y="36" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="12">Accueil</text>
+  <text x="566" y="36" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="12">Défis</text>
+  <text x="619" y="36" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="12">Mon impact</text>
+  <circle cx="765" cy="31" r="15" fill="#7894ad" opacity=".3"/>
+  <text x="765" y="35" text-anchor="middle" fill="#f8fafc" font-family="Arial, sans-serif" font-size="10" font-weight="700">EK</text>
+
+  <text x="38" y="103" fill="#f8fafc" font-family="Arial, sans-serif" font-size="23" font-weight="700">Agir pour la planète</text>
+  <text x="38" y="126" fill="#94a3b8" font-family="Arial, sans-serif" font-size="12">Des éco-gestes simples, des défis quotidiens et un impact qui grandit.</text>
+
+  <g transform="translate(38 151)">
+    <rect width="226" height="84" rx="12" fill="#142e33" stroke="#1e3a3f"/>
+    <circle cx="38" cy="42" r="21" fill="#7894ad" opacity=".2"/>
+    <path d="M38 52s-13-8-13-16a7 7 0 0 1 13-3 7 7 0 0 1 13 3c0 8-13 16-13 16z" fill="none" stroke="#9eb1c1" stroke-width="1.8"/>
+    <text x="72" y="38" fill="#aabaca" font-family="Arial, sans-serif" font-size="11">Vos actions</text>
+    <text x="72" y="57" fill="#f8fafc" font-family="Arial, sans-serif" font-size="14" font-weight="700">Mes éco-défis</text>
+  </g>
+  <g transform="translate(278 151)">
+    <rect width="226" height="84" rx="12" fill="#142e33" stroke="#1e3a3f"/>
+    <circle cx="38" cy="42" r="21" fill="#7894ad" opacity=".2"/>
+    <path d="M27 48a12 12 0 1 1 22 0M38 42l7-7M32 51h12" fill="none" stroke="#9eb1c1" stroke-width="1.8" stroke-linecap="round"/>
+    <text x="72" y="38" fill="#aabaca" font-family="Arial, sans-serif" font-size="11">Impact estimé</text>
+    <text x="72" y="57" fill="#f8fafc" font-family="Arial, sans-serif" font-size="14" font-weight="700">Suivre mes progrès</text>
+  </g>
+  <g transform="translate(518 151)">
+    <rect width="244" height="84" rx="12" fill="#142e33" stroke="#1e3a3f"/>
+    <circle cx="38" cy="42" r="21" fill="#7894ad" opacity=".2"/>
+    <path d="M28 48h20M31 44l5-7 5 4 6-9" fill="none" stroke="#9eb1c1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="72" y="38" fill="#aabaca" font-family="Arial, sans-serif" font-size="11">Progression</text>
+    <text x="72" y="57" fill="#f8fafc" font-family="Arial, sans-serif" font-size="14" font-weight="700">Chaque geste compte</text>
+  </g>
+
+  <g transform="translate(38 258)">
+    <rect width="724" height="184" rx="12" fill="#0d2427" stroke="#1e3a3f"/>
+    <text x="20" y="31" fill="#f8fafc" font-family="Arial, sans-serif" font-size="15" font-weight="700">Votre impact au quotidien</text>
+    <text x="20" y="51" fill="#aabaca" font-family="Arial, sans-serif" font-size="11">Relevez des défis concrets et suivez votre contribution à l’environnement.</text>
+    <rect x="20" y="69" width="326" height="89" rx="9" fill="#0a191d" stroke="#1e3a3f"/>
+    <text x="36" y="91" fill="#aabaca" font-family="Arial, sans-serif" font-size="10" font-weight="700">SCORE ÉCO-GESTES</text>
+    <text x="36" y="125" fill="#7894ad" font-family="Arial, sans-serif" font-size="28" font-weight="700">842</text>
+    <text x="98" y="125" fill="#94a3b8" font-family="Arial, sans-serif" font-size="12">points</text>
+    <rect x="36" y="137" width="190" height="7" rx="3.5" fill="#1e3a3f"/>
+    <rect x="36" y="137" width="132" height="7" rx="3.5" fill="#7894ad"/>
+    <text x="235" y="144" fill="#94a3b8" font-family="Arial, sans-serif" font-size="9">70 %</text>
+    <path d="M371 114h34" stroke="#1e3a3f" stroke-width="2"/>
+    <path d="m399 108 7 6-7 6" fill="none" stroke="#7894ad" stroke-width="2"/>
+    <rect x="426" y="69" width="278" height="89" rx="9" fill="#0a191d" stroke="#1e3a3f"/>
+    <rect x="444" y="82" width="106" height="19" rx="9" fill="#7894ad" opacity=".2"/>
+    <circle cx="455" cy="91.5" r="3" fill="#7894ad"/>
+    <text x="464" y="95" fill="#c4a75e" font-family="Arial, sans-serif" font-size="9" font-weight="700">CONSEIL PERSONNALISÉ</text>
+    <text x="444" y="119" fill="#f8fafc" font-family="Arial, sans-serif" font-size="11" font-weight="700">Défi du jour</text>
+    <text x="444" y="136" fill="#94a3b8" font-family="Arial, sans-serif" font-size="10">Choisissez un trajet à pied ou à vélo.</text>
+    <rect x="444" y="143" width="104" height="20" rx="6" fill="#7894ad"/>
+    <text x="496" y="157" text-anchor="middle" fill="#0a191d" font-family="Arial, sans-serif" font-size="9" font-weight="700">RELEVER LE DÉFI</text>
+  </g>
+</svg>

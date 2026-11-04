@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="100%" height="100%">
+  <rect width="800" height="480" fill="#0b1329"/>
+  <rect width="800" height="62" fill="#111f3d"/>
+  <circle cx="45" cy="31" r="17" fill="#7894ad"/>
+  <path d="M37 32c5-8 12-8 17 0-5 8-12 8-17 0z" fill="none" stroke="#f8fafc" stroke-width="1.8"/>
+  <text x="71" y="37" fill="#f8fafc" font-family="Arial, sans-serif" font-size="16" font-weight="700">Billingue</text>
+  <text x="502" y="36" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="12">Accueil</text>
+  <text x="568" y="36" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="12">Leçons</text>
+  <text x="628" y="36" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="12">Vocabulaire</text>
+  <circle cx="765" cy="31" r="15" fill="#7894ad" opacity=".3"/>
+  <text x="765" y="35" text-anchor="middle" fill="#f8fafc" font-family="Arial, sans-serif" font-size="10" font-weight="700">EK</text>
+
+  <text x="38" y="103" fill="#f8fafc" font-family="Arial, sans-serif" font-size="23" font-weight="700">Apprendre le baoulé</text>
+  <text x="38" y="126" fill="#94a3b8" font-family="Arial, sans-serif" font-size="12">Progressez à votre rythme avec des leçons et exercices interactifs.</text>
+
+  <g transform="translate(38 151)">
+    <rect width="226" height="84" rx="12" fill="#1e293b" stroke="#334155"/>
+    <circle cx="38" cy="42" r="21" fill="#7894ad" opacity=".2"/>
+    <path d="M31 36v12a7 7 0 0 0 14 0V36M28 48h20" fill="none" stroke="#9eb1c1" stroke-width="2" stroke-linecap="round"/>
+    <text x="72" y="38" fill="#94a3b8" font-family="Arial, sans-serif" font-size="11">Entraînement oral</text>
+    <text x="72" y="57" fill="#f8fafc" font-family="Arial, sans-serif" font-size="14" font-weight="700">Prononcer un mot</text>
+  </g>
+  <g transform="translate(278 151)">
+    <rect width="226" height="84" rx="12" fill="#1e293b" stroke="#334155"/>
+    <circle cx="38" cy="42" r="21" fill="#7894ad" opacity=".2"/>
+    <path d="M31 33h14l5 5v15H31zM45 33v6h5M35 44h10M35 48h7" fill="none" stroke="#9eb1c1" stroke-width="1.7" stroke-linejoin="round"/>
+    <text x="72" y="38" fill="#94a3b8" font-family="Arial, sans-serif" font-size="11">Parcours thématiques</text>
+    <text x="72" y="57" fill="#f8fafc" font-family="Arial, sans-serif" font-size="14" font-weight="700">Explorer les leçons</text>
+  </g>
+  <g transform="translate(518 151)">
+    <rect width="244" height="84" rx="12" fill="#1e293b" stroke="#334155"/>
+    <circle cx="38" cy="42" r="21" fill="#7894ad" opacity=".2"/>
+    <path d="M28 43h4l4-8 5 16 4-10 4 2h5" fill="none" stroke="#9eb1c1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="72" y="38" fill="#94a3b8" font-family="Arial, sans-serif" font-size="11">IA vocale</text>
+    <text x="72" y="57" fill="#f8fafc" font-family="Arial, sans-serif" font-size="14" font-weight="700">Écouter et répéter</text>
+  </g>
+
+  <g transform="translate(38 258)">
+    <rect width="724" height="184" rx="12" fill="#111f3d" stroke="#334155"/>
+    <text x="20" y="31" fill="#f8fafc" font-family="Arial, sans-serif" font-size="15" font-weight="700">Leçon du jour · Les mots de la vie quotidienne</text>
+    <text x="20" y="51" fill="#94a3b8" font-family="Arial, sans-serif" font-size="11">Écoutez la prononciation, découvrez le sens puis entraînez-vous à l’oral.</text>
+    <rect x="20" y="69" width="326" height="89" rx="9" fill="#0b1329" stroke="#334155"/>
+    <rect x="36" y="84" width="75" height="18" rx="9" fill="#7894ad" opacity=".2"/>
+    <text x="73" y="97" text-anchor="middle" fill="#9eb1c1" font-family="Arial, sans-serif" font-size="9" font-weight="700">MOT BAOULÉ</text>
+    <text x="36" y="128" fill="#f8fafc" font-family="Arial, sans-serif" font-size="24" font-weight="700">N'zue</text>
+    <text x="36" y="147" fill="#94a3b8" font-family="Arial, sans-serif" font-size="11">Signifie « l’eau »</text>
+    <path d="M371 114h34" stroke="#334155" stroke-width="2"/>
+    <path d="m399 108 7 6-7 6" fill="none" stroke="#7894ad" stroke-width="2"/>
+    <rect x="426" y="69" width="278" height="89" rx="9" fill="#0b1329" stroke="#334155"/>
+    <rect x="444" y="82" width="93" height="19" rx="9" fill="#7894ad" opacity=".2"/>
+    <circle cx="455" cy="91.5" r="3" fill="#7894ad"/>
+    <text x="464" y="95" fill="#9eb1c1" font-family="Arial, sans-serif" font-size="9" font-weight="700">RECONNAISSANCE VOCALE</text>
+    <g fill="#7894ad">
+      <rect x="446" y="119" width="4" height="15" rx="2"/><rect x="454" y="114" width="4" height="25" rx="2"/>
+      <rect x="462" y="121" width="4" height="11" rx="2"/><rect x="470" y="111" width="4" height="31" rx="2"/>
+      <rect x="478" y="117" width="4" height="19" rx="2"/><rect x="486" y="108" width="4" height="37" rx="2"/>
+      <rect x="494" y="118" width="4" height="17" rx="2"/><rect x="502" y="113" width="4" height="27" rx="2"/>
+      <rect x="510" y="121" width="4" height="11" rx="2"/>
+    </g>
+    <text x="530" y="129" fill="#f8fafc" font-family="Arial, sans-serif" font-size="11" font-weight="700">À vous de prononcer</text>
+    <text x="530" y="145" fill="#94a3b8" font-family="Arial, sans-serif" font-size="10">Écoutez et répétez le mot</text>
+  </g>
+</svg>

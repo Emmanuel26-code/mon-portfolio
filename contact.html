@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#e8e6e1">
+	<meta name="description" content="Contactez Kobri Emmanuel Kablan, étudiant à l'ESATIC pour un stage dès mars 2027 ou un projet logiciel et IA.">
+	<title>Contact | Kobri Emmanuel Kablan | Portfolio</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js" defer></script>
+</head>
+<body>
+	<div class="reading-progress" id="reading-progress" aria-hidden="true"></div>
+	<a class="skip-link" href="#contenu">Aller au contenu</a>
+
+	<header class="site-header" id="site-header">
+		<a class="wordmark" href="index.html#accueil" aria-label="Kobri Emmanuel Kablan, retour à l'accueil">
+			<span class="wordmark-name">EMMANUEL<br><span>PORTFOLIO</span></span>
+		</a>
+
+		<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Ouvrir le menu de navigation">
+			<span></span><span></span><span></span>
+		</button>
+
+		<nav class="site-nav" id="site-nav" aria-label="Navigation principale">
+			<a class="nav-link" href="index.html#accueil">Accueil</a>
+			<a class="nav-link" href="a-propos.html#apropos">À propos</a>
+			<a class="nav-link" href="projets.html#projets">Projets</a>
+			<a class="nav-contact active" href="contact.html" aria-current="page">Me contacter <span aria-hidden="true">↗</span></a>
+		</nav>
+	</header>
+
+	<main id="contenu">
+		<section class="content-section contact-section" id="contact" aria-labelledby="contact-title">
+			<div class="section-wrap contact-layout">
+				<div class="contact-copy">
+					<h1 id="contact-title">
+						Vous avez un projet ou une <span>opportunité de stage ?</span>
+					</h1>
+					<p class="contact-intro">
+						N'hésitez pas à me contacter. Je suis à votre écoute pour un stage de fin d'études dès <strong>mars 2027</strong> (durée min. 3 mois) ou des projets en génie logiciel, développement mobile et IA.
+					</p>
+
+					<div class="contact-details">
+						<div class="contact-row">
+							<span class="contact-label">EMAIL</span>
+							<a class="contact-value" href="mailto:kobrikablan@gmail.com?subject=Contact%20depuis%20le%20portfolio">
+								kobrikablan@gmail.com
+							</a>
+							<button class="btn-copy" type="button" data-copy="kobrikablan@gmail.com" title="Copier l'adresse email">
+								Copier
+							</button>
+						</div>
+
+						<div class="contact-row">
+							<span class="contact-label">TÉLÉPHONE</span>
+							<a class="contact-value" href="tel:+2250702369882">
+								+225 07 02 36 98 82
+							</a>
+							<a class="contact-sublink" href="https://wa.me/2250702369882" target="_blank" rel="noopener noreferrer">
+								WhatsApp ↗
+							</a>
+						</div>
+
+						<div class="contact-row">
+							<span class="contact-label">LINKEDIN</span>
+							<a class="contact-value" href="https://www.linkedin.com/in/emmanuelkablan" target="_blank" rel="noopener noreferrer">
+								Kobri Emmanuel Kablan
+							</a>
+							<span class="contact-sublink">Profil ↗</span>
+						</div>
+
+						<div class="contact-row">
+							<span class="contact-label">VILLE</span>
+							<span class="contact-value">Abidjan, Côte d'Ivoire</span>
+							<span class="contact-sublink">ESATIC</span>
+						</div>
+					</div>
+				</div>
+
+				<form class="contact-form" id="contact-form" action="backend/contact.php" method="post" novalidate>
+					<p class="form-heading">Laissez-moi un message direct</p>
+					<p class="form-subheading">Je réponds généralement en moins de 24h.</p>
+
+					<div class="form-group">
+						<label for="name">Votre nom ou entreprise <span class="required">*</span></label>
+						<input id="name" name="name" type="text" placeholder="Jean Kouassi ou Orange CI" autocomplete="name" required>
+						<span class="input-error" id="name-error" aria-live="polite"></span>
+					</div>
+
+					<div class="form-group">
+						<label for="email">Votre email <span class="required">*</span></label>
+						<input id="email" name="email" type="email" placeholder="nom@exemple.com" autocomplete="email" required>
+						<span class="input-error" id="email-error" aria-live="polite"></span>
+					</div>
+
+					<div class="form-group">
+						<label for="subject">Sujet <span class="required">*</span></label>
+						<input id="subject" name="subject" type="text" placeholder="Proposition de stage de fin d'études" required>
+						<span class="input-error" id="subject-error" aria-live="polite"></span>
+					</div>
+
+					<div class="form-group">
+						<label for="message">Message <span class="required">*</span></label>
+						<textarea id="message" name="message" rows="5" placeholder="Décrivez votre opportunité ou votre projet..." required></textarea>
+						<span class="input-error" id="message-error" aria-live="polite"></span>
+					</div>
+
+					<button class="button button-primary form-submit" type="submit" id="btn-submit">
+						<span>Envoyer le message</span>
+					</button>
+
+					<p class="form-note" id="form-note" aria-live="polite">
+						Le message sera préparé pour être transmis à <strong>kobrikablan@gmail.com</strong>.
+					</p>
+				</form>
+			</div>
+		</section>
+	</main>
+
+	<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+	<footer class="site-footer">
+		<div class="footer-content section-wrap">
+			<div class="footer-brand">
+				<div><strong>Kobri Emmanuel Kablan</strong><p>Étudiant en Licence 3 SIGL · ESATIC Abidjan</p></div>
+			</div>
+			<div class="footer-copy">
+				<span>© <span id="year">2026</span> Kobri Emmanuel Kablan. Tous droits réservés.</span>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#e8e6e1">
+	<meta name="description" content="Découvrez les projets de Kobri Emmanuel Kablan : Billingue, EcoChallenge et un cahier de texte avec génération automatique du plan de cours.">
+	<title>Projets | Kobri Emmanuel Kablan | Portfolio</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js" defer></script>
+</head>
+<body>
+	<div class="reading-progress" id="reading-progress" aria-hidden="true"></div>
+	<a class="skip-link" href="#contenu">Aller au contenu</a>
+
+	<header class="site-header" id="site-header">
+		<a class="wordmark" href="index.html#accueil" aria-label="Kobri Emmanuel Kablan, retour à l'accueil">
+			<span class="wordmark-name">EMMANUEL<br><span>PORTFOLIO</span></span>
+		</a>
+
+		<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Ouvrir le menu de navigation">
+			<span></span><span></span><span></span>
+		</button>
+
+		<nav class="site-nav" id="site-nav" aria-label="Navigation principale">
+			<a class="nav-link" href="index.html#accueil">Accueil</a>
+			<a class="nav-link" href="a-propos.html#apropos">À propos</a>
+			<a class="nav-link active" href="projets.html#projets" aria-current="page">Projets</a>
+			<a class="nav-contact" href="contact.html#contact">Me contacter <span aria-hidden="true">↗</span></a>
+		</nav>
+	</header>
+
+	<main id="contenu">
+		<section class="content-section projects-section" id="projets" aria-labelledby="projects-title">
+			<div class="section-wrap">
+				<div class="section-heading section-heading-row">
+					<div>
+						<p class="eyebrow">SÉLECTION DE RÉALISATIONS</p>
+						<h1 id="projects-title">Projets <span>choisis</span></h1>
+					</div>
+				</div>
+
+				<div class="projects-grid">
+					<!-- PROJET 1 : BILLINGUE -->
+					<article class="project-card project-billingue" data-project="billingue">
+						<div class="project-media-wrap">
+							<img class="project-img" src="images/billingue.svg" alt="Aperçu du projet Billingue" width="600" height="360" loading="lazy">
+							<span class="project-badge">PROJET / 01</span>
+							<span class="project-pill-tech">MOBILE + IA VOCALE</span>
+						</div>
+						<div class="project-body">
+							<p class="project-type">APPLICATION MOBILE · APPRENTISSAGE</p>
+							<h3 class="project-title">Billingue</h3>
+							<p class="project-subtitle">Application d'apprentissage du Baoulé</p>
+							<p class="project-desc">
+								Application mobile destinée à faciliter l'apprentissage de la langue baoulé grâce à une expérience interactive intégrant des technologies d'intelligence artificielle.
+							</p>
+							<ul class="tag-list">
+								<li class="tag-accent">Dart</li>
+								<li class="tag-accent">Flutter</li>
+								<li>Firebase</li>
+								<li class="tag-glow">OpenAI Whisper</li>
+							</ul>
+							<div class="project-actions">
+								<button class="button button-primary button-sm btn-open-modal" type="button" data-modal="billingue">
+									Voir le projet <span aria-hidden="true">↗</span>
+								</button>
+								<a class="button button-secondary button-sm" href="https://github.com/kobenanadingraj-code/Projet-de-langue" target="_blank" rel="noopener noreferrer">
+									GitHub <span aria-hidden="true">↗</span>
+								</a>
+							</div>
+						</div>
+					</article>
+
+					<!-- PROJET 2 : ECOCHALLENGE -->
+					<article class="project-card project-eco" data-project="ecochallenge">
+						<div class="project-media-wrap">
+							<img class="project-img" src="images/ecochallenge.svg" alt="Aperçu du projet EcoChallenge" width="600" height="360" loading="lazy">
+							<span class="project-badge">PROJET / 02</span>
+							<span class="project-pill-tech">MOBILE + CLAUDE AI</span>
+						</div>
+						<div class="project-body">
+							<p class="project-type">APPLICATION MOBILE · DÉVELOPPEMENT DURABLE</p>
+							<h3 class="project-title">EcoChallenge</h3>
+							<p class="project-subtitle">Sensibilisation au développement durable</p>
+							<p class="project-desc">
+								Application mobile visant à sensibiliser les utilisateurs aux enjeux du développement durable à travers une expérience interactive, gamifiée et assistée par IA.
+							</p>
+							<ul class="tag-list">
+								<li class="tag-accent">Dart</li>
+								<li class="tag-accent">Flutter</li>
+								<li class="tag-glow">Anthropic Claude</li>
+								<li>Figma</li>
+							</ul>
+							<div class="project-actions">
+								<button class="button button-primary button-sm btn-open-modal" type="button" data-modal="ecochallenge">
+									Voir le projet <span aria-hidden="true">↗</span>
+								</button>
+							</div>
+						</div>
+					</article>
+
+					<!-- PROJET 3 : CAHIER DE TEXTE -->
+					<article class="project-card" data-project="cahier-texte">
+						<div class="project-media-wrap">
+							<img class="project-img" src="images/cahier-texte.svg" alt="Aperçu du projet Cahier de texte numérique" width="600" height="360" loading="lazy">
+							<span class="project-badge">PROJET / 03</span>
+							<span class="project-pill-tech">DJANGO + IA GEMINI</span>
+						</div>
+						<div class="project-body">
+							<p class="project-type">APPLICATION WEB · GESTION SCOLAIRE</p>
+							<h3 class="project-title">Cahier de texte numérique</h3>
+							<p class="project-subtitle">Suivi des séances et génération du plan de cours</p>
+							<p class="project-desc">
+								Application web scolaire permettant de consigner les séances et de générer, à partir d’un support de cours, une proposition de plan hiérarchisé grâce à l’IA.
+							</p>
+							<ul class="tag-list">
+								<li class="tag-accent">Python · Django</li>
+								<li>MySQL</li>
+								<li class="tag-glow">Google Gemini</li>
+								<li>Bootstrap 5</li>
+							</ul>
+							<div class="project-actions">
+								<button class="button button-primary button-sm btn-open-modal" type="button" data-modal="cahier-texte">
+									Voir le projet <span aria-hidden="true">↗</span>
+								</button>
+								<a class="button button-secondary button-sm" href="https://github.com/Emmanuel26-code/cahier-texte-numerique" target="_blank" rel="noopener noreferrer">
+									GitHub <span aria-hidden="true">↗</span>
+								</a>
+							</div>
+						</div>
+					</article>
+
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<!-- Modale projet -->
+	<dialog class="project-modal" id="project-modal" aria-labelledby="modal-title">
+		<div class="modal-card">
+			<button class="modal-close" type="button" id="modal-close" aria-label="Fermer la boîte de dialogue">&times;</button>
+			<div class="modal-content" id="modal-content"></div>
+		</div>
+	</dialog>
+	<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+	<footer class="site-footer">
+		<div class="footer-content section-wrap">
+			<div class="footer-brand">
+				<div><strong>Kobri Emmanuel Kablan</strong><p>Étudiant en Licence 3 SIGL · ESATIC Abidjan</p></div>
+			</div>
+			<div class="footer-copy">
+				<span>© <span id="year">2026</span> Kobri Emmanuel Kablan. Tous droits réservés.</span>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
